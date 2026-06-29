@@ -1,36 +1,157 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🌵 Raízes do Nordeste - Sistema de gestão para expansões
 
-## Getting Started
+🚀 Visão Geral
 
-First, run the development server:
+O sistema foi desenvolvido para facilitar a operação do restaurante, oferecendo:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+📱 Cardápio digital completo
+🛒 Carrinho de compras
+💳 Checkout com múltiplos pagamentos
+👤 Autenticação de clientes
+🧾 Histórico de pedidos
+🛠️ Painel administrativo completo
+📦 Controle de estoque e produtos
+🎟️ Sistema de promoções e cupons
+🏪 Gestão de unidades/restaurantes
+👤 Área do Cliente (Site)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+O cliente pode navegar, escolher produtos e finalizar pedidos de forma simples e rápida.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+🔐 Autenticação
+Cadastro de usuário
+Login no sistema
+Histórico de pedidos por usuário
+🍽️ Cardápio
+Visualização de produtos por categoria
+Listagem de itens disponíveis
+Detalhes do produto
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+📍 Rota:
 
-## Learn More
+/cardapio
+🏪 Restaurantes / Unidades
+Seleção da unidade
+Visualização de informações da loja
 
-To learn more about Next.js, take a look at the following resources:
+📍 Rota:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+/restaurantes
+🛒 Carrinho
+Adicionar/remover produtos
+Ajuste de quantidade
+Cálculo automático do total
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+📍 Rota:
 
-## Deploy on Vercel
+/cart
+💳 Checkout
+Confirmação do pedido
+Escolha de pagamento:
+Pix
+Cartão de crédito
+Débito
+Dinheiro (se disponível)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+📍 Rota:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+/checkout
+📦 Pedidos
+Visualizar pedidos realizados
+Acompanhar status:
+Pendente
+Em preparo
+Enviado
+Finalizado
+Cancelado
+
+📍 Rota:
+
+/pedidos
+🎟️ Promoções
+Visualizar promoções ativas
+Aplicação de cupons no checkout
+
+📍 Rota:
+
+/promos
+🍔 Produto
+Página detalhada do produto
+Informações completas e preço
+
+📍 Rota:
+
+/produto
+🛠️ Área Administrativa (Admin Panel)
+
+Painel interno para gestão completa do restaurante.
+
+📦 Produtos
+Cadastro e edição de produtos
+Preço, descrição e imagens
+Organização por categoria
+
+📍 Rota:
+
+/admin/produtos
+📦 Estoque
+Controle de quantidade disponível
+Alertas de estoque baixo
+Atualização automática via pedidos
+
+📍 Rota:
+
+/admin/estoque
+🧾 Pedidos
+Lista de todos os pedidos
+Atualização de status em tempo real
+Detalhes completos do cliente
+
+📍 Rota:
+
+/admin/pedidos
+🎟️ Promoções
+Criar e gerenciar cupons
+Definir descontos (% ou valor fixo)
+Limite de uso e validade
+
+📍 Rota:
+
+/admin/promos
+🏪 Unidades
+Gerenciamento das lojas/restaurantes
+Configurações por unidade
+
+📍 Rota:
+
+/admin/unidades
+⚙️ Estrutura do Projeto (Next.js App Router)
+app/
+ ├── (admin)/
+ │    ├── estoque/
+ │    ├── pedidos/
+ │    ├── produtos/
+ │    ├── promos/
+ │    └── unidades/
+ │
+ ├── (site)/
+ │    ├── cardapio/
+ │    ├── cart/
+ │    ├── checkout/
+ │    ├── pedidos/
+ │    ├── produto/
+ │    ├── promos/
+ │    └── restaurantes/
+💳 Pagamentos
+Pix (instantâneo)
+Cartão de crédito
+Cartão de débito
+Dinheiro (opcional por unidade)
+🎯 Objetivo do Sistema
+
+O Raízes do Nordeste foi desenvolvido para:
+
+Digitalizar o processo de pedidos do restaurante
+Reduzir filas e tempo de atendimento
+Centralizar gestão de produtos e pedidos
+Melhorar experiência do cliente
+Aumentar eficiência operacional
