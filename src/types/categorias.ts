@@ -1,0 +1,6 @@
+export type Categoria = {
+  id: number;
+  name: string;
+  slug: string;
+  image: string;
+};
