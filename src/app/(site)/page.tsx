@@ -8,23 +8,26 @@ import ProductSection from "@/components/home/section-produto";
 
 import { produtos } from "@/data/produtos";
 import { Search } from "lucide-react";
+import LGPDPopup from "@/components/LGPDPopup";
 
 export default function HomeSite() {
   const [search, setSearch] = useState("");
 
   const horaDoRango = produtos.filter(
-    (p) => p.categoryId === 2 || p.categoryId === 6 || p.categoryId === 8
+    (p) => p.categoryId === 2 || p.categoryId === 6 || p.categoryId === 8,
   );
 
   const vaiUmDoce = produtos.filter((p) => p.categoryId === 5);
   const praRefrescar = produtos.filter((p) => p.categoryId === 3);
 
   const produtosFiltrados = produtos.filter((produto) =>
-    produto.name.toLowerCase().includes(search.toLowerCase())
+    produto.name.toLowerCase().includes(search.toLowerCase()),
   );
 
   return (
     <div className="w-full overflow-x-hidden">
+      <LGPDPopup />
+
       <CarroselHome />
 
       {/* HERO / BUSCA */}
