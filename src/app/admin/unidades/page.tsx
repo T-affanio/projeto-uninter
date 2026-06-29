@@ -225,7 +225,7 @@ export default function UnidadesPage() {
         {/* MODAL */}
         {open && (
           <div className="fixed inset-0 bg-black/50 flex items-center justify-center">
-            <div className="bg-white p-6 rounded-xl w-[420px]">
+            <div className="bg-white p-6 rounded-xl w-105">
 
               <h2 className="text-xl font-bold mb-4">
                 {editId ? "Editar Unidade" : "Nova Unidade"}

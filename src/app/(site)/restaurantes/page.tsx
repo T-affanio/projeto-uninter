@@ -16,7 +16,7 @@ export default function Restaurantes() {
           alt="Banner Raízes do Nordeste"
         />
 
-        <div className="absolute inset-0 bg-gradient-to-b from-[#1A0E08]/80 via-[#2B180F]/70 to-[#1A0E08]/90" />
+        <div className="absolute inset-0 bg-linear-to-b from-[#1A0E08]/80 via-[#2B180F]/70 to-[#1A0E08]/90" />
 
         <div className="relative z-10 flex flex-col items-center text-center px-6">
 
@@ -59,7 +59,7 @@ export default function Restaurantes() {
 
         </div>
 
-        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#FAF2E3] to-transparent" />
+        <div className="absolute bottom-0 left-0 right-0 h-24 bg-linear-to-t from-[#FAF2E3] to-transparent" />
       </section>
 
       {/* SOBRE */}

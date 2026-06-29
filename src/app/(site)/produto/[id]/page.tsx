@@ -46,7 +46,7 @@ export default async function ProdutoPage({ params }: Props) {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-10 lg:gap-14 items-start">
         
         {/* IMAGEM */}
-        <div className="relative w-full aspect-square sm:aspect-[4/3] lg:aspect-auto lg:h-[500px] xl:h-[600px] rounded-xl overflow-hidden shadow-xl">
+        <div className="relative w-full aspect-square sm:aspect-4/3 lg:aspect-auto lg:h-125 xl:h-150 rounded-xl overflow-hidden shadow-xl">
           <Image
             src={produto.image}
             alt={produto.name}

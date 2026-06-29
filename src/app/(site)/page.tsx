@@ -31,7 +31,7 @@ export default function HomeSite() {
       <section
         className="
           w-full
-          min-h-[220px] sm:min-h-[260px] md:min-h-[300px]
+          min-h-55 sm:min-h-65 md:min-h-75
           -mt-3
           bg-cover bg-center
           flex flex-col items-center justify-center

@@ -41,7 +41,7 @@ export default function UnitCard({ unidade }: Props) {
         />
 
         {/* GRADIENTE */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#2A140B] via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-t from-[#2A140B] via-transparent to-transparent" />
 
         {/* NOTA */}
         <div className="absolute left-5 top-5 flex items-center gap-2 rounded-full bg-[#F5B21B] px-4 py-2 font-bold text-[#4A2818]">
@@ -97,7 +97,7 @@ export default function UnitCard({ unidade }: Props) {
           className="
           w-full
           rounded-2xl
-          bg-gradient-to-r
+          bg-linear-to-r
           from-[#C93A14]
           to-[#E85A2A]
           py-4
